@@ -16,7 +16,7 @@ const middleware1 = function(request, response, nextFunction){
     console.log('hello world')
     nextFunction()
 }
-const  middleware2 = (request, response, nextFunction) => {
+const  middleware2 = (request, response) => {
     return response.json({status:200, data: null, message: 'this thing is on'})
 }
 
